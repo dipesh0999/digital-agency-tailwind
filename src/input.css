@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #ffc700;
+  --color-cream: #ECD6B6;
+  --color-db: #222A41;
+  --color-black: #000000;
+  --color-f2: #f2f2f2;
+  --color-b45: #b5b4b5;
+  --color-grey: #293340;
+  --color-blueGray: #AEB7C1;
+}
+
+.textLine{
+  position: relative;
+  transition: all .3s ease-in;
+  padding-bottom: 3px;
+}
+.textLine::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform .3s ease-in;
+}
+
+.textLine:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.tlBlack{
+  &::before{
+      background: #000;
+  }
+  &:hover{
+    color: #ffc700;
+    &::before{
+      background: #ffc700;
+    }
+  }
+}
+
+.tlWhite{
+  &::before{
+      background: #fff;
+  }
+  &:hover{
+    color: #ffc700;
+    &::before{
+      background: #ffc700;
+    }
+  }
+}
+
+.tlYellow{
+  &::before{
+    background: #ffc700;
+  }
+  &:hover{
+    color: #000;
+    &::before{
+      background: #000;
+    }
+  }
+}
+
