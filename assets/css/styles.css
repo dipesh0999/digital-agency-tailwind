@@ -7,13 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-emerald-400: oklch(76.5% 0.177 163.223);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --tracking-tighter: -0.05em;
@@ -26,6 +22,7 @@
     --color-f2: #f2f2f2;
     --color-b45: #b5b4b5;
     --color-grey: #293340;
+    --color-lightGray: #DBDBDB;
     --color-blueGray: #AEB7C1;
   }
 }
@@ -205,6 +202,9 @@
   .left-\[55\%\] {
     left: 55%;
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -292,6 +292,9 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
@@ -301,29 +304,8 @@
   .h-\[80px\] {
     height: 80px;
   }
-  .h-\[130px\] {
-    height: 130px;
-  }
   .h-\[163px\] {
     height: 163px;
-  }
-  .h-\[200px\] {
-    height: 200px;
-  }
-  .h-\[306px\] {
-    height: 306px;
-  }
-  .h-\[320px\] {
-    height: 320px;
-  }
-  .h-\[421px\] {
-    height: 421px;
-  }
-  .h-\[422px\] {
-    height: 422px;
-  }
-  .h-\[500px\] {
-    height: 500px;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -334,8 +316,29 @@
   .w-1\/4 {
     width: calc(1/4 * 100%);
   }
+  .w-\[8px\] {
+    width: 8px;
+  }
+  .w-\[12px\] {
+    width: 12px;
+  }
+  .w-\[13px\] {
+    width: 13px;
+  }
+  .w-\[16px\] {
+    width: 16px;
+  }
   .w-\[40px\] {
     width: 40px;
+  }
+  .w-\[45px\] {
+    width: 45px;
+  }
+  .w-\[66px\] {
+    width: 66px;
+  }
+  .w-\[78px\] {
+    width: 78px;
   }
   .w-\[80px\] {
     width: 80px;
@@ -351,6 +354,9 @@
   }
   .w-\[163px\] {
     width: 163px;
+  }
+  .w-\[164px\] {
+    width: 164px;
   }
   .w-\[192px\] {
     width: 192px;
@@ -423,6 +429,12 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
+  }
   .gap-\[20px\] {
     gap: 20px;
   }
@@ -446,6 +458,9 @@
   }
   .gap-\[120px\] {
     gap: 120px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -474,6 +489,9 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 30px;
   }
+  .border-lightGray {
+    border-color: var(--color-lightGray);
+  }
   .border-yellow {
     border-color: var(--color-yellow);
   }
@@ -488,9 +506,6 @@
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-cream {
-    background-color: var(--color-cream);
   }
   .bg-f2 {
     background-color: var(--color-f2);
@@ -669,26 +684,14 @@
   .text-\[18px\] {
     font-size: 18px;
   }
-  .text-\[20px\] {
-    font-size: 20px;
-  }
   .text-\[24px\] {
     font-size: 24px;
   }
   .text-\[28px\] {
     font-size: 28px;
   }
-  .text-\[30px\] {
-    font-size: 30px;
-  }
   .text-\[34px\] {
     font-size: 34px;
-  }
-  .text-\[35px\] {
-    font-size: 35px;
-  }
-  .text-\[40px\] {
-    font-size: 40px;
   }
   .text-\[48px\] {
     font-size: 48px;
@@ -698,10 +701,6 @@
   }
   .text-\[80px\] {
     font-size: 80px;
-  }
-  .leading-\[\.6\] {
-    --tw-leading: .6;
-    line-height: .6;
   }
   .leading-\[1\.1\] {
     --tw-leading: 1.1;
@@ -755,17 +754,6 @@
     --tw-tracking: 3px;
     letter-spacing: 3px;
   }
-  .tracking-\[4px\] {
-    --tw-tracking: 4px;
-    letter-spacing: 4px;
-  }
-  .tracking-tighter {
-    --tw-tracking: var(--tracking-tighter);
-    letter-spacing: var(--tracking-tighter);
-  }
-  .text-b45 {
-    color: var(--color-b45);
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -787,9 +775,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .italic {
-    font-style: italic;
-  }
   .outline-0 {
     outline-style: var(--tw-outline-style);
     outline-width: 0px;
@@ -798,9 +783,36 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
+  }
+  .group-hover\:scale-\[1\.2\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
+  }
+  .group-hover\:brightness-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-brightness: brightness(0%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .group-hover\:invert-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-invert: invert(0%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
   }
   .placeholder\:text-db {
     &::placeholder {
@@ -903,6 +915,61 @@
     }
   }
 }
+.group {
+  &:hover {
+    .tlYellow {
+      color: #000;
+      &::before {
+        background: #000;
+      }
+    }
+    .tlWhite, .tlBlack {
+      color: #ffc700;
+      &::before {
+        background: #ffc700;
+      }
+    }
+    .rubberBand {
+      animation-name: rubberBand;
+    }
+    .textLine::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+.rubberBand {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+  &:hover {
+    animation-name: rubberBand;
+  }
+}
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -948,6 +1015,59 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -961,6 +1081,19 @@
       --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
     }
   }
 }
