@@ -1268,6 +1268,11 @@
       gap: 30px;
     }
   }
+  .max-sm\:gap-\[40px\] {
+    @media (width < 40rem) {
+      gap: 40px;
+    }
+  }
   .max-sm\:gap-\[50px\] {
     @media (width < 40rem) {
       gap: 50px;
