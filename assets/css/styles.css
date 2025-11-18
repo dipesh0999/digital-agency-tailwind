@@ -1208,6 +1208,16 @@
       width: 150px;
     }
   }
+  .max-sm\:w-\[160px\] {
+    @media (width < 40rem) {
+      width: 160px;
+    }
+  }
+  .max-sm\:w-\[175px\] {
+    @media (width < 40rem) {
+      width: 175px;
+    }
+  }
   .max-sm\:w-\[300px\] {
     @media (width < 40rem) {
       width: 300px;
@@ -1449,6 +1459,11 @@
   .max-sm\:text-\[10px\] {
     @media (width < 40rem) {
       font-size: 10px;
+    }
+  }
+  .max-sm\:text-\[12px\] {
+    @media (width < 40rem) {
+      font-size: 12px;
     }
   }
   .max-sm\:text-\[16px\] {
