@@ -1128,6 +1128,11 @@
       width: calc(1/2 * 100%);
     }
   }
+  .max-sm\:w-\[10px\] {
+    @media (width < 40rem) {
+      width: 10px;
+    }
+  }
   .max-sm\:w-\[15px\] {
     @media (width < 40rem) {
       width: 15px;
