@@ -1481,6 +1481,16 @@
       font-size: 12px;
     }
   }
+  .max-sm\:text-\[13px\] {
+    @media (width < 40rem) {
+      font-size: 13px;
+    }
+  }
+  .max-sm\:text-\[14px\] {
+    @media (width < 40rem) {
+      font-size: 14px;
+    }
+  }
   .max-sm\:text-\[16px\] {
     @media (width < 40rem) {
       font-size: 16px;
