@@ -1376,6 +1376,11 @@
       padding-inline: 25px;
     }
   }
+  .max-sm\:px-\[30px\] {
+    @media (width < 40rem) {
+      padding-inline: 30px;
+    }
+  }
   .max-sm\:px-\[50px\] {
     @media (width < 40rem) {
       padding-inline: 50px;
