@@ -1053,6 +1053,11 @@
       margin-bottom: 10px;
     }
   }
+  .max-sm\:mb-\[15px\] {
+    @media (width < 40rem) {
+      margin-bottom: 15px;
+    }
+  }
   .max-sm\:mb-\[20px\] {
     @media (width < 40rem) {
       margin-bottom: 20px;
