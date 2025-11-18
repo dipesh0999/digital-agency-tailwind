@@ -1258,6 +1258,12 @@
       border-width: 3px;
     }
   }
+  .max-sm\:border-b-\[1px\] {
+    @media (width < 40rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
   .max-sm\:border-b-\[3px\] {
     @media (width < 40rem) {
       border-bottom-style: var(--tw-border-style);
@@ -1322,6 +1328,11 @@
     @media (width < 40rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 30px;
+    }
+  }
+  .max-sm\:border-b-lightGray {
+    @media (width < 40rem) {
+      border-bottom-color: var(--color-lightGray);
     }
   }
   .max-sm\:bg-white {
