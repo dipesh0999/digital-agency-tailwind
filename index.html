@@ -3,330 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <title>Digital Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body class="">
-    <header class="flex items-center justify-between px-[50px] py-[35px]">
-      <a href="" class="rubberBand duration-300 ease-in"><img src="assets/images/logo.png" alt="" class="w-[78px]" width="78" height="51" /></a>
-      <ul class="flex items-center gap-[52px] text-[13px] font-black text-black uppercase">
-        <li><a href="" class="textLine tlBlack leading-[1]">Our Service</a></li>
-        <li><a href="" class="textLine tlBlack leading-[1]">About us</a></li>
-        <li><a href="" class="textLine tlBlack leading-[1]">Blog</a></li>
-        <li><a href="" class="textLine tlBlack leading-[1]">Contact us</a></li>
-      </ul>
-    </header>
-    
-    <section class="flex">
-      <div class="w-1/2 bg-yellow pt-[182px] pr-[96px] pb-[181px] pl-[153px]">
-        <h1 class="text-[60px] leading-[1.1] font-black">Grow your brand through digital</h1>
-        <p class="mt-[30px] mb-[20px] text-[15px] text-db">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness. each of us has within our power the ability to disrupt</p>
-        <a href="" class="block w-[216px] bg-black py-[10px] text-center text-[15px] font-bold text-white uppercase duration-300 ease-in hover:bg-white hover:text-black">Learn More</a>
-      </div>
-      <div class="w-1/2 "><img src="assets/images/banner.png" alt="" class="w-full" width="721" height="650"></div>
-    </section>
-    
-    <section class="bg-f2 pt-[141px] pr-[136px] pb-[50px] pl-[138px]">
-      <h2 class="mr-[89px] ml-auto w-[475px] text-right text-[48px] leading-[1.3] font-black">We’re always ready for <span class="text-yellow"> challenges</span></h2>
-      <div class="mt-[25px] flex flex-wrap gap-[50px]">
-        <div class="relative mr-[30px] w-[543px] pl-[61px]">
-          <div class="absolute top-[50px] left-0 w-[122px]"><img src="assets/images/service/img_1.png" alt="" class="w-full" width="122" height="134"></div>
-          <div class="bg-black pt-[76px] pr-[44px] pb-[105px] pl-[94px] text-white">
-            <div class="mb-[14px] text-[34px] leading-[1] font-black">Web Development</div>
-            <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+  <body class="overflow-x-hidden w-full">
+    <main class="wrapper">
+      <header class="flex items-center justify-between px-[50px] py-[35px] max-sm:py-[30px] max-sm:px-[20px] overflow-x-hidden">
+        <a href="" class="rubberBand duration-300 ease-in"><img src="assets/images/logo.png" alt="" class="w-[78px]" width="78" height="51" /></a>
+        <div class="max-sm:absolute max-sm:-left-[100%] max-sm:top-0 max-sm:w-full">
+          <ul class="flex items-center gap-[52px] text-[13px] font-black text-black uppercase max-sm:flex-col max-sm:w-full max-sm:bg-white max-sm:py-[100px] max-sm:px-[50px]">
+            <li><a href="" class="textLine tlBlack leading-[1]">Our Service</a></li>
+            <li><a href="" class="textLine tlBlack leading-[1]">About us</a></li>
+            <li><a href="" class="textLine tlBlack leading-[1]">Blog</a></li>
+            <li><a href="" class="textLine tlBlack leading-[1]">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class=" w-[40px] h-[40px] text-black " x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      
+      <section class="flex max-sm:flex-col">
+        <div class="w-1/2 bg-yellow pt-[182px] pr-[96px] pb-[181px] pl-[153px] max-sm:w-full max-sm:py-[50px] max-sm:px-[25px]">
+          <h1 class="text-[60px] leading-[1.1] font-black max-sm:text-[40px]">Grow your brand through digital</h1>
+          <p class="mt-[30px] mb-[20px] text-[15px] text-db max-sm:my-[25px] ">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness. each of us has within our power the ability to disrupt</p>
+          <a href="" class="block w-[216px] bg-black py-[10px] text-center text-[15px] font-bold text-white uppercase duration-300 ease-in hover:bg-white hover:text-black">Learn More</a>
+        </div>
+        <div class="w-1/2 max-sm:w-full"><img src="assets/images/banner.png" alt="" class="w-full" width="721" height="650"></div>
+      </section>
+      
+      <section class="bg-f2 pt-[141px] pr-[136px] pb-[50px] pl-[138px] max-sm:py-[50px] max-sm:px-[25px]">
+        <h2 class="mr-[89px] ml-auto w-[475px] text-right text-[48px] leading-[1.3] font-black max-sm:w-full max-sm:m-0 max-sm:text-[32px]">We’re always ready for <span class="text-yellow"> challenges</span></h2>
+        <div class="mt-[25px] flex flex-wrap gap-[50px] max-sm:mt-[50px]">
+          <div class="relative mr-[30px] w-[543px] pl-[61px] max-sm:w-full max-sm:pl-[0px] max-sm:m-0">
+            <div class="absolute top-[50px] left-0 w-[122px] max-sm:left-[50px]"><img src="assets/images/service/img_1.png" alt="" class="w-full" width="122" height="134"></div>
+            <div class="bg-black pt-[76px] pr-[44px] pb-[105px] pl-[94px] text-white max-sm:p-[50px] max-sm:pt-[225px]">
+              <div class="mb-[14px] text-[34px] leading-[1] font-black max-sm:text-[28px] max-sm:mb-[25px]">Web Development</div>
+              <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+            </div>
+          </div>
+          <div class="relative w-[543px] pr-[61px] max-sm:w-full max-sm:pr-[0px] max-sm:m-0">
+            <div class="absolute top-[50px] right-0 w-[122px] max-sm:left-[50px]"><img src="assets/images/service/img_2.png" alt="" class="w-full" width="122" height="134"></div>
+            <div class="bg-black pt-[76px] pr-[94px] pb-[105px] pl-[44px] text-white max-sm:p-[50px] max-sm:pt-[225px]">
+              <div class="mb-[14px] text-[34px] leading-[1] font-black max-sm:text-[28px] max-sm:mb-[25px]">UI/UX Design</div>
+              <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+            </div>
+          </div>
+          <div class="relative mr-[30px] w-[543px] pl-[61px] max-sm:w-full max-sm:pl-[0px] max-sm:m-0">
+            <div class="absolute top-[50px] left-0 w-[122px] max-sm:left-[50px]"><img src="assets/images/service/img_3.png" alt="" class="w-full" width="122" height="134"></div>
+            <div class="bg-black pt-[76px] pr-[44px] pb-[105px] pl-[94px] text-white max-sm:p-[50px] max-sm:pt-[225px]">
+              <div class="mb-[14px] text-[34px] leading-[1] font-black max-sm:text-[28px] max-sm:mb-[25px]">Digital Marketing</div>
+              <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+            </div>
+          </div>
+          <div class="relative w-[543px] pr-[61px] max-sm:w-full max-sm:pr-[0px] max-sm:m-0">
+            <div class="absolute top-[50px] right-0 w-[122px] max-sm:left-[50px]"><img src="assets/images/service/img_4.png" alt="" class="w-full" width="122" height="134"></div>
+            <div class="bg-black pt-[76px] pr-[94px] pb-[105px] pl-[44px] text-white max-sm:p-[50px] max-sm:pt-[225px]">
+              <div class="mb-[14px] text-[34px] leading-[1] font-black max-sm:text-[28px] max-sm:mb-[25px]">Brand Design</div>
+              <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+            </div>
           </div>
         </div>
-        <div class="relative w-[543px] pr-[61px]">
-          <div class="absolute top-[50px] right-0 w-[122px]"><img src="assets/images/service/img_2.png" alt="" class="w-full" width="122" height="134"></div>
-          <div class="bg-black pt-[76px] pr-[94px] pb-[105px] pl-[44px] text-white">
-            <div class="mb-[14px] text-[34px] leading-[1] font-black">UI/UX Design</div>
-            <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+      </section>
+      
+      <section class="flex items-end gap-[120px] bg-f2 pr-[164px] pb-[97px] pl-[165px] max-sm:py-[50px] max-sm:px-[25px] max-sm:flex-col max-sm:gap-[50px]">
+        <div class="w-[543px] max-sm:w-full">
+          <h2 class="inline-block border-b-[6px] border-yellow pb-[40px] text-[48px] leading-[1.3] font-black max-sm:text-[32px] max-sm:border-b-[3px] max-sm:pb-[15px]">Our recent <span class="text-yellow">projects</span></h2>
+          <div class="w-[448px] text-db max-sm:w-full">
+            <div class="mt-[40px] mb-[30px] text-[34px] leading-[1.5] tracking-[2px] max-sm:mb-[20px] max-sm:leading-[1.2]">Website development for Digital Company</div>
+            <p class="text-[15px] tracking-[.5px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+          </div>
+          <div class="mt-[125px] w-full max-sm:mt-[50px]"><img src="assets/images/projects/img_1.png" alt="" class="w-full" width="543" height="500"></div>
+        </div>
+        <div class="w-[448px] max-sm:w-full">
+          <div class="mb-[27px] w-full"><img src="assets/images/projects/img_2.png" alt="" class="w-full" width="448" height="500"></div>
+          <div class="w-full"><img src="assets/images/projects/img_3.png" alt="" class="w-full" width="448" height="306"></div>
+        </div>
+      </section>
+      
+      <section class="flex gap-[100px] bg-f2 pt-[78px] pr-[164px] pb-[139px] pl-[185px] max-sm:py-[50px] max-sm:px-[25px] max-sm:flex-col max-sm:gap-[30px]">
+        <div class="relative w-[543px] max-sm:w-full">
+          <img src="assets/images/video_poster.png" alt="" class="w-full" width="543" height="320">
+          <div class="absolute top-[50%] left-[50%] h-[80px] w-[80px] -translate-[50%] cursor-pointer rounded-full bg-yellow max-sm:w-[70px] max-sm:h-[70px]">
+            <span class="absolute top-[50%] left-[55%] h-0 w-0 -translate-[50%] border-t-[20px] border-b-[20px] border-l-[30px] border-t-transparent border-b-transparent border-l-white max-sm:border-b-[14px] max-sm:border-l-[25px]"></span>
           </div>
         </div>
-        <div class="relative mr-[30px] w-[543px] pl-[61px]">
-          <div class="absolute top-[50px] left-0 w-[122px]"><img src="assets/images/service/img_3.png" alt="" class="w-full" width="122" height="134"></div>
-          <div class="bg-black pt-[76px] pr-[44px] pb-[105px] pl-[94px] text-white">
-            <div class="mb-[14px] text-[34px] leading-[1] font-black">Digital Marketing</div>
-            <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+        <div class="w-[448px] max-sm:w-full">
+          <div class="text-[34px] font-black max-sm:leading-[1.2]">The thing about us is <span class="block text-yellow">we think big, huge</span></div>
+          <ul class="mt-[40px] mb-[30px] list-disc pl-[20px] text-[15px] text-db max-sm:mt-[30px]">
+            <li class="mb-[10px]">If the path is beautiful, let us not ask where it leads</li>
+            <li class="mb-[10px]">my religion is very simple. my religion is kindness</li>
+            <li class="mb-[10px]">each of us has within our power the ability to disrupt</li>
+          </ul>
+          <a href="" class="block w-[160px] bg-black py-[10px] text-center text-[11px] font-bold tracking-[3px] text-white uppercase duration-300 ease-in hover:bg-yellow hover:text-white">learn more</a>
+        </div>
+      </section>
+      
+      <section class="flex max-sm:flex-col">
+        <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white max-sm:w-full">
+          <div class="mb-[30px] text-[80px] leading-[1]">124</div>
+          <div class="text-[24px] font-black text-white uppercase">Complete Projects</div>
+        </div>
+      
+        <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white max-sm:w-full">
+          <div class="mb-[30px] text-[80px] leading-[1]">99%</div>
+          <div class="text-[24px] font-black text-white uppercase">Satisfied Clients</div>
+        </div>
+      
+        <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white max-sm:w-full">
+          <div class="mb-[30px] text-[80px] leading-[1]">235</div>
+          <div class="text-[24px] font-black text-white uppercase">Success Campaign</div>
+        </div>
+      
+        <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white max-sm:w-full">
+          <div class="mb-[30px] text-[80px] leading-[1]">2345</div>
+          <div class="text-[24px] font-black text-white uppercase">Cups of Coffee</div>
+        </div>
+      </section>
+      
+      <section class="bg-f2 pt-[127px] pr-[163px] pb-[60px] pl-[164px] max-sm:py-[50px] max-sm:px-[25px]">
+        <h2 class="text-[48px] font-black text-black max-sm:text-[32px]">From our <span class="text-yellow">blog</span></h2>
+        <div class="mt-[69px] flex items-start gap-[27px] max-sm:flex-col max-sm:mt-[30px] max-sm:gap-[50px]">
+          <div class="w-[638px] max-sm:w-full">
+            <img src="assets/images/blogs/img_1.png" alt="" class="w-full mb-[28px]" width="638" height="422">
+            <div class="mb-[25px] text-[12px] font-black text-blueGray uppercase">Website design | Thursday, 26 March 2020</div>
+            <div class="text-[34px] font-black text-black max-sm:text-[28px] max-sm:leading-[1.2]">I think night-time is dark so you can imagine with less distraction</div>
+            <p class="my-[27px] text-[15px] text-db">The engine that gives its mysterious inner life to a work of art must be the subterranean expression of a wish, working its way to the surface of a narrative. change is an easy panacea. it takes character to stay in one…</p>
+            <div class="text-right">
+              <a href="" class="group text-[13px] font-black uppercase group inline-flex items-center gap-[15px]">
+                <span class="tlYellow textLine text-yellow">Read More</span>
+                <img src="assets/images/icons/right_arrow.png" alt="" class="w-[45px] rubberBand group-hover:brightness-0 group-hover:invert-0" width="45" height="14" />
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="relative w-[543px] pr-[61px]">
-          <div class="absolute top-[50px] right-0 w-[122px]"><img src="assets/images/service/img_4.png" alt="" class="w-full" width="122" height="134"></div>
-          <div class="bg-black pt-[76px] pr-[94px] pb-[105px] pl-[44px] text-white">
-            <div class="mb-[14px] text-[34px] leading-[1] font-black">Brand Design</div>
-            <p class="text-[15px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="flex items-end gap-[120px] bg-f2 pr-[164px] pb-[97px] pl-[165px]">
-      <div class="w-[543px]">
-        <h2 class="inline-block border-b-[6px] border-yellow pb-[40px] text-[48px] leading-[1.3] font-black">Our recent <span class="text-yellow">projects</span></h2>
-        <div class="w-[448px] text-db">
-          <div class="mt-[40px] mb-[30px] text-[34px] leading-[1.5] tracking-[2px]">Website development for Digital Company</div>
-          <p class="text-[15px] tracking-[.5px]">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-        </div>
-        <div class="mt-[125px] w-full"><img src="assets/images/projects/img_1.png" alt="" class="w-full" width="543" height="500"></div>
-      </div>
-      <div class="w-[448px]">
-        <div class="mb-[27px] w-full"><img src="assets/images/projects/img_2.png" alt="" class="w-full" width="448" height="500"></div>
-        <div class="w-full"><img src="assets/images/projects/img_3.png" alt="" class="w-full" width="448" height="306"></div>
-      </div>
-    </section>
-    
-    <section class="flex gap-[100px] bg-f2 pt-[78px] pr-[164px] pb-[139px] pl-[185px]">
-      <div class="relative w-[543px]">
-        <img src="assets/images/video_poster.png" alt="" class="w-full" width="543" height="320">
-        <div class="absolute top-[49%] left-[49%] h-[80px] w-[80px] -translate-[50%] cursor-pointer rounded-full bg-yellow">
-          <span class="absolute top-[50%] left-[55%] h-0 w-0 -translate-[50%] border-t-[20px] border-b-[20px] border-l-[30px] border-t-transparent border-b-transparent border-l-white"></span>
-        </div>
-      </div>
-      <div class="w-[448px]">
-        <div class="text-[34px] font-black">The thing about us is <span class="block text-yellow">we think big, huge</span></div>
-        <ul class="mt-[40px] mb-[30px] list-disc pl-[20px] text-[15px] text-db">
-          <li class="mb-[10px]">If the path is beautiful, let us not ask where it leads</li>
-          <li class="mb-[10px]">my religion is very simple. my religion is kindness</li>
-          <li class="mb-[10px]">each of us has within our power the ability to disrupt</li>
-        </ul>
-        <a href="" class="block w-[160px] bg-black py-[10px] text-center text-[11px] font-bold tracking-[3px] text-white uppercase duration-300 ease-in hover:bg-yellow hover:text-white">learn more</a>
-      </div>
-    </section>
-    
-    <section class="flex">
-      <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white">
-        <div class="mb-[30px] text-[80px] leading-[1]">124</div>
-        <div class="text-[24px] font-black text-white uppercase">Complete Projects</div>
-      </div>
-    
-      <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white">
-        <div class="mb-[30px] text-[80px] leading-[1]">99%</div>
-        <div class="text-[24px] font-black text-white uppercase">Satisfied Clients</div>
-      </div>
-    
-      <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white">
-        <div class="mb-[30px] text-[80px] leading-[1]">235</div>
-        <div class="text-[24px] font-black text-white uppercase">Success Campaign</div>
-      </div>
-    
-      <div class="numBox w-1/4 bg-black px-[51px] py-[102px] text-center text-yellow duration-300 ease-in hover:bg-yellow hover:text-white">
-        <div class="mb-[30px] text-[80px] leading-[1]">2345</div>
-        <div class="text-[24px] font-black text-white uppercase">Cups of Coffee</div>
-      </div>
-    </section>
-    
-    <section class="bg-f2 pt-[127px] pr-[163px] pb-[60px] pl-[164px]">
-      <h2 class="text-[48px] font-black text-black">From our <span class="text-yellow">blog</span></h2>
-      <div class="mt-[69px] flex items-start gap-[27px]">
-        <div class="w-[638px]">
-          <img src="assets/images/blogs/img_1.png" alt="" class="w-full mb-[28px]" width="638" height="422">
-          <div class="mb-[25px] text-[12px] font-black text-blueGray uppercase">Website design | Thursday, 26 March 2020</div>
-          <div class="text-[34px] font-black text-black">I think night-time is dark so you can imagine with less distraction</div>
-          <p class="my-[27px] text-[15px] text-db">The engine that gives its mysterious inner life to a work of art must be the subterranean expression of a wish, working its way to the surface of a narrative. change is an easy panacea. it takes character to stay in one…</p>
-          <div class="text-right">
-            <a href="" class="group text-[13px] font-black uppercase group inline-flex items-center gap-[15px]">
-              <span class="tlYellow textLine text-yellow">Read More</span>
-              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[45px] rubberBand group-hover:brightness-0 group-hover:invert-0" width="45" height="14" />
+          <div class="">
+            <a href="" class="mb-[27px] group flex gap-[27px] max-sm:gap-[20px] max-sm:mb-[40px]">
+              <div class="w-[163px] h-[163px] overflow-hidden max-sm:w-[150px] max-sm:h-[150px]">
+                <img src="assets/images/blogs/img_2.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
+              </div>
+              <div class="w-[275px] max-sm:w-1/2">
+                <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">website development</div>
+                <div class="text-[24px] leading-[1.3] font-black text-black max-sm:text-[16px]">The individual is born of nature, but the artist is born of that individual</div>
+              </div>
             </a>
+      
+            <a href="" class="mb-[27px] group flex gap-[27px] max-sm:gap-[20px] max-sm:mb-[40px]">
+              <div class="w-[163px] h-[163px] overflow-hidden max-sm:w-[150px] max-sm:h-[150px]">
+                <img src="assets/images/blogs/img_3.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
+              </div>
+              <div class="w-[275px] max-sm:w-1/2">
+                <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">Brand Design</div>
+                <div class="text-[24px] leading-[1.3] font-black text-black max-sm:text-[16px]">A life without it is like a sunless garden when the flowers are dead</div>
+              </div>
+            </a>
+      
+            <a href="" class="mb-[27px] group flex gap-[27px] max-sm:gap-[20px] max-sm:mb-[40px]">
+              <div class="w-[163px] h-[163px] overflow-hidden max-sm:w-[150px] max-sm:h-[150px]">
+                <img src="assets/images/blogs/img_4.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
+              </div>
+              <div class="w-[275px] max-sm:w-1/2">
+                <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">UI UX Design</div>
+                <div class="text-[24px] leading-[1.3] font-black text-black max-sm:text-[16px]">All sorrows can be borne if they can be put into a story</div>
+              </div>
+            </a>
+      
+            <a href="" class="mb-[27px] group flex gap-[27px] max-sm:gap-[20px] max-sm:mb-[40px]">
+              <div class="w-[163px] h-[163px] overflow-hidden max-sm:w-[150px] max-sm:h-[150px]">
+                <img src="assets/images/blogs/img_5.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
+              </div>
+              <div class="w-[275px] max-sm:w-1/2">
+                <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">Brand Design</div>
+                <div class="text-[24px] leading-[1.3] font-black text-black max-sm:text-[16px]">Love is friendship set on fire. certain thoughts are prayers</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-f2 pt-[60px] pr-[163px] pb-[120px] pl-[164px] max-sm:py-[50px] max-sm:px-[25px] max-sm:pt-[0]">
+        <h2 class="mb-[70px] ml-auto w-[420px] text-right text-[48px] leading-[1.3] font-black text-black max-sm:w-full max-sm:text-[32px] max-sm:mb-[20px]"><span class="text-yellow">People</span> behind the scenes</h2>
+        <div class="flex items-start gap-[27px] max-sm:flex-col">
+          <div class="w-[350px] max-sm:w-full">
+            <div class="text-[28px] font-black max-sm:text-[22px]">Tiara Lyodra</div>
+            <div class="my-[20px] text-[13px] font-bold text-grey max-sm:mt-[10px] max-sm:mb-[20px]">Head of Product</div>
+            <div class="mb-[50px] flex gap-[30px] text-[14px] font-black max-sm:mb-[30px]">
+              <a href="" class="duration-300 ease-in group max-sm:w-[15px]">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary w-full h-full">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.09322 14V7.7H7.13342L7.46667 4.9H5.09322V3.5364C5.09322 2.8154 5.11287 2.1 6.18754 2.1H7.27603V0.098C7.27603 0.0679 6.34106 0 5.39518 0C3.41974 0 2.18281 1.1599 2.18281 3.29V4.9H0V7.7H2.18281V14H5.09322Z"
+                      fill="#DBDBDB" />
+                  <mask id="mask0_2349_142" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="8" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.09322 14V7.7H7.13342L7.46667 4.9H5.09322V3.5364C5.09322 2.8154 5.11287 2.1 6.18754 2.1H7.27603V0.098C7.27603 0.0679 6.34106 0 5.39518 0C3.41974 0 2.18281 1.1599 2.18281 3.29V4.9H0V7.7H2.18281V14H5.09322Z"
+                          fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_2349_142)">
+                      <rect width="8" height="14" fill="black" />
+                  </g>
+              </svg>
+              </a>
+              <a href="" class="duration-300 ease-in group max-sm:w-[30px]">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary w-full h-full">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.5766 3.26337C11.5766 3.72728 11.2005 4.10337 10.7366 4.10337C10.2727 4.10337 9.89658 3.72728 9.89658 3.26337C9.89658 2.79945 10.2727 2.42337 10.7366 2.42337C11.2005 2.42337 11.5766 2.79945 11.5766 3.26337ZM7 9.33335C5.71134 9.33335 4.66665 8.28866 4.66665 7C4.66665 5.71134 5.71134 4.66665 7 4.66665C8.28866 4.66665 9.33335 5.71134 9.33335 7C9.33335 8.28866 8.28866 9.33335 7 9.33335ZM7 3.40539C5.01479 3.40539 3.40539 5.01473 3.40539 7C3.40539 8.98521 5.01479 10.5946 7 10.5946C8.98521 10.5946 10.5946 8.98521 10.5946 7C10.5946 5.01473 8.98521 3.40539 7 3.40539ZM7 0C5.0989 0 4.86057 0.00803906 4.11392 0.0421094C3.36886 0.076125 2.85999 0.194414 2.41473 0.3675C1.95442 0.546383 1.56406 0.78575 1.17491 1.17491C0.78575 1.56401 0.546383 1.95437 0.3675 2.41473C0.194469 2.85999 0.076125 3.3688 0.0421094 4.11392C0.00803906 4.86052 0 5.0989 0 7C0 8.9011 0.00803906 9.13948 0.0421094 9.88608C0.076125 10.6311 0.194469 11.14 0.3675 11.5853C0.546383 12.0455 0.78575 12.4359 1.17491 12.8251C1.56406 13.2143 1.95442 13.4536 2.41473 13.6325C2.85999 13.8056 3.36886 13.9239 4.11392 13.9579C4.86057 13.992 5.0989 14 7 14C8.9011 14 9.13954 13.992 9.88608 13.9579C10.6312 13.9239 11.14 13.8056 11.5853 13.6325C12.0456 13.4536 12.436 13.2143 12.8251 12.8251C13.2143 12.4359 13.4536 12.0456 13.6326 11.5853C13.8056 11.14 13.9239 10.6311 13.9579 9.88608C13.992 9.13948 14 8.9011 14 7C14 5.0989 13.992 4.86052 13.9579 4.11392C13.9239 3.3688 13.8056 2.85999 13.6326 2.41473C13.4536 1.95437 13.2143 1.56401 12.8251 1.17491C12.436 0.78575 12.0456 0.546383 11.5853 0.3675C11.14 0.194414 10.6312 0.076125 9.88608 0.0421094C9.13954 0.00803906 8.9011 0 7 0ZM7 1.26126C8.86911 1.26126 9.09048 1.26837 9.8286 1.30205C10.5111 1.33323 10.8817 1.44725 11.1285 1.54306C11.4551 1.67005 11.6884 1.8218 11.9333 2.0667C12.1783 2.31164 12.3299 2.54488 12.4569 2.87159C12.5528 3.11828 12.6668 3.48895 12.6979 4.1714C12.7316 4.90952 12.7387 5.13089 12.7387 7C12.7387 8.86905 12.7316 9.09043 12.6979 9.82855C12.6668 10.5111 12.5528 10.8817 12.4569 11.1284C12.3299 11.4551 12.1783 11.6883 11.9333 11.9333C11.6884 12.1782 11.4551 12.33 11.1285 12.4569C10.8817 12.5528 10.5111 12.6668 9.8286 12.6979C9.09059 12.7316 8.86922 12.7387 7 12.7387C5.13084 12.7387 4.90941 12.7316 4.1714 12.6979C3.48895 12.6668 3.11828 12.5528 2.87164 12.4569C2.54488 12.33 2.31164 12.1782 2.0667 11.9333C1.8218 11.6883 1.6701 11.4551 1.54312 11.1284C1.44725 10.8817 1.33323 10.5111 1.30211 9.8286C1.26837 9.09043 1.26126 8.86905 1.26126 7C1.26126 5.13089 1.26837 4.90952 1.30211 4.1714C1.33323 3.48895 1.44725 3.11828 1.54312 2.87159C1.6701 2.54488 1.8218 2.31164 2.0667 2.0667C2.31164 1.8218 2.54488 1.67005 2.87164 1.54306C3.11828 1.44725 3.48895 1.33323 4.1714 1.30205C4.90952 1.26837 5.13095 1.26126 7 1.26126Z"
+                  fill="#DBDBDB" />
+                  <mask id="mask0_2349_143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.5766 3.26337C11.5766 3.72728 11.2005 4.10337 10.7366 4.10337C10.2727 4.10337 9.89658 3.72728 9.89658 3.26337C9.89658 2.79945 10.2727 2.42337 10.7366 2.42337C11.2005 2.42337 11.5766 2.79945 11.5766 3.26337ZM7 9.33335C5.71134 9.33335 4.66665 8.28866 4.66665 7C4.66665 5.71134 5.71134 4.66665 7 4.66665C8.28866 4.66665 9.33335 5.71134 9.33335 7C9.33335 8.28866 8.28866 9.33335 7 9.33335ZM7 3.40539C5.01479 3.40539 3.40539 5.01473 3.40539 7C3.40539 8.98521 5.01479 10.5946 7 10.5946C8.98521 10.5946 10.5946 8.98521 10.5946 7C10.5946 5.01473 8.98521 3.40539 7 3.40539ZM7 0C5.0989 0 4.86057 0.00803906 4.11392 0.0421094C3.36886 0.076125 2.85999 0.194414 2.41473 0.3675C1.95442 0.546383 1.56406 0.78575 1.17491 1.17491C0.78575 1.56401 0.546383 1.95437 0.3675 2.41473C0.194469 2.85999 0.076125 3.3688 0.0421094 4.11392C0.00803906 4.86052 0 5.0989 0 7C0 8.9011 0.00803906 9.13948 0.0421094 9.88608C0.076125 10.6311 0.194469 11.14 0.3675 11.5853C0.546383 12.0455 0.78575 12.4359 1.17491 12.8251C1.56406 13.2143 1.95442 13.4536 2.41473 13.6325C2.85999 13.8056 3.36886 13.9239 4.11392 13.9579C4.86057 13.992 5.0989 14 7 14C8.9011 14 9.13954 13.992 9.88608 13.9579C10.6312 13.9239 11.14 13.8056 11.5853 13.6325C12.0456 13.4536 12.436 13.2143 12.8251 12.8251C13.2143 12.4359 13.4536 12.0456 13.6326 11.5853C13.8056 11.14 13.9239 10.6311 13.9579 9.88608C13.992 9.13948 14 8.9011 14 7C14 5.0989 13.992 4.86052 13.9579 4.11392C13.9239 3.3688 13.8056 2.85999 13.6326 2.41473C13.4536 1.95437 13.2143 1.56401 12.8251 1.17491C12.436 0.78575 12.0456 0.546383 11.5853 0.3675C11.14 0.194414 10.6312 0.076125 9.88608 0.0421094C9.13954 0.00803906 8.9011 0 7 0ZM7 1.26126C8.86911 1.26126 9.09048 1.26837 9.8286 1.30205C10.5111 1.33323 10.8817 1.44725 11.1285 1.54306C11.4551 1.67005 11.6884 1.8218 11.9333 2.0667C12.1783 2.31164 12.3299 2.54488 12.4569 2.87159C12.5528 3.11828 12.6668 3.48895 12.6979 4.1714C12.7316 4.90952 12.7387 5.13089 12.7387 7C12.7387 8.86905 12.7316 9.09043 12.6979 9.82855C12.6668 10.5111 12.5528 10.8817 12.4569 11.1284C12.3299 11.4551 12.1783 11.6883 11.9333 11.9333C11.6884 12.1782 11.4551 12.33 11.1285 12.4569C10.8817 12.5528 10.5111 12.6668 9.8286 12.6979C9.09059 12.7316 8.86922 12.7387 7 12.7387C5.13084 12.7387 4.90941 12.7316 4.1714 12.6979C3.48895 12.6668 3.11828 12.5528 2.87164 12.4569C2.54488 12.33 2.31164 12.1782 2.0667 11.9333C1.8218 11.6883 1.6701 11.4551 1.54312 11.1284C1.44725 10.8817 1.33323 10.5111 1.30211 9.8286C1.26837 9.09043 1.26126 8.86905 1.26126 7C1.26126 5.13089 1.26837 4.90952 1.30211 4.1714C1.33323 3.48895 1.44725 3.11828 1.54312 2.87159C1.6701 2.54488 1.8218 2.31164 2.0667 2.0667C2.31164 1.8218 2.54488 1.67005 2.87164 1.54306C3.11828 1.44725 3.48895 1.33323 4.1714 1.30205C4.90952 1.26837 5.13095 1.26126 7 1.26126Z"
+                          fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_2349_143)">
+                      <rect width="14" height="14" fill="black" />
+                  </g>
+                </svg>
+              </a>
+              <a href="" class="duration-300 ease-in group max-sm:w-[30px]">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary w-full h-full">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.4338 10.2862H8.70527V7.20433C8.70527 6.48793 8.45502 5.99893 7.82949 5.99893C7.35191 5.99893 7.06773 6.32877 6.94256 6.6471C6.89713 6.76076 6.88562 6.92 6.88562 7.07931V10.2862H5.15714V6.49922C5.15714 5.80561 5.13442 5.22566 5.1117 4.72522H6.61272L6.69246 5.49856H6.72653C6.95392 5.13457 7.51123 4.60006 8.44373 4.60006C9.58099 4.60006 10.4338 5.36211 10.4338 6.99966V10.2862ZM3.24692 4.0429C2.70119 4.0429 2.34864 3.65612 2.34864 3.17862C2.34864 2.68969 2.71248 2.31441 3.26963 2.31441C3.82687 2.31441 4.16806 2.68969 4.17942 3.17862C4.17942 3.65612 3.82687 4.0429 3.24692 4.0429ZM2.39407 10.2862H4.12263V4.72522H2.39407V10.2862ZM11.5527 0H1.2953C0.579799 0 0 0.581816 0 1.29963V11.7004C0 12.4182 0.579799 13 1.2953 13H11.5527C12.2682 13 12.848 12.4182 12.848 11.7004V1.29963C12.848 0.581816 12.2682 0 11.5527 0Z"
+                      fill="#DBDBDB" />
+                  <mask id="mask0_2349_144" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.4338 10.2862H8.70527V7.20433C8.70527 6.48793 8.45502 5.99893 7.82949 5.99893C7.35191 5.99893 7.06773 6.32877 6.94256 6.6471C6.89713 6.76076 6.88562 6.92 6.88562 7.07931V10.2862H5.15714V6.49922C5.15714 5.80561 5.13442 5.22566 5.1117 4.72522H6.61272L6.69246 5.49856H6.72653C6.95392 5.13457 7.51123 4.60006 8.44373 4.60006C9.58099 4.60006 10.4338 5.36211 10.4338 6.99966V10.2862ZM3.24692 4.0429C2.70119 4.0429 2.34864 3.65612 2.34864 3.17862C2.34864 2.68969 2.71248 2.31441 3.26963 2.31441C3.82687 2.31441 4.16806 2.68969 4.17942 3.17862C4.17942 3.65612 3.82687 4.0429 3.24692 4.0429ZM2.39407 10.2862H4.12263V4.72522H2.39407V10.2862ZM11.5527 0H1.2953C0.579799 0 0 0.581816 0 1.29963V11.7004C0 12.4182 0.579799 13 1.2953 13H11.5527C12.2682 13 12.848 12.4182 12.848 11.7004V1.29963C12.848 0.581816 12.2682 0 11.5527 0Z"
+                          fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_2349_144)">
+                      <rect width="13" height="13" fill="black" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="text-[15px] text-db">
+              <p class="mb-[30px]">Saturday found him for the first time strolling alone through zurich, breathing in the heady smell of his freedom. new adventures hid around each corner.</p>
+              <p class="">The future was again a secret. now, what was tiring had disappeared and only the beauty remained.</p>
+            </div>
+          </div>
+          <div class="flex items-end gap-[27px] max-sm:flex-wrap max-sm:gap-[25px]">
+            <img src="assets/images/team/img_1.png" alt="" class="w-[163px] max-sm:w-[46%]" width="163" height="163">
+            <img src="assets/images/team/img_2.png" alt="" class="w-[163px] max-sm:w-[46%]" width="163" height="163">
+            <img src="assets/images/team/img_3.png" alt="" class="w-[163px] max-sm:w-[46%]" width="163" height="421">
+            <img src="assets/images/team/img_4.png" alt="" class="w-[163px] max-sm:w-[46%]" width="163" height="163">
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-yellow pt-[75px] pb-[109px] max-sm:py-[50px] max-sm:px-[25px]">
+        <div class="w-[575px] mx-auto text-center max-sm:w-full">
+          <img src="assets/images/icons/icon_1.png" alt="" class="w-[66px] m-auto mb-[20px] max-sm:w-[30px]" width="66" height="58">
+          <div class="text-[15px] tracking-[.8px] mb-[22px]">
+            Saturday found him for the first time strolling alone through zurich, breathing in the heady smell of his freedom. new adventures hid around each corner. The future was again a secret. now, what was tiring
+          </div>
+          <div class="text-[13px] font-black mb-[18px] max-sm:mb-[10px]">Anna Karenina</div>
+          <div class="text-[13px] font-bold">UI Designer</div>
+        </div>
+      </section>
+      
+      <section class="bg-f2 pt-[90px] pr-[163px] pb-[120px] pl-[164px] max-sm:py-[50px] max-sm:px-[25px]">
+      
+        <div class="flex justify-center items-center gap-[27px] text-center mb-[191px] max-sm:mb-[50px] max-sm:flex-wrap max-sm:gap-[15px]">
+          <img src="assets/images/clients/logo_1.png" alt="" class="w-[164px] max-sm:w-[110px]" width="164" height="100">
+          <img src="assets/images/clients/logo_2.png" alt="" class="w-[164px] max-sm:w-[110px]" width="164" height="100">
+          <img src="assets/images/clients/logo_3.png" alt="" class="w-[164px] max-sm:w-[110px]" width="164" height="100">
+          <img src="assets/images/clients/logo_4.png" alt="" class="w-[164px] max-sm:w-[110px]" width="164" height="100">
+          <img src="assets/images/clients/logo_5.png" alt="" class="w-[164px] max-sm:w-[110px]" width="164" height="100">
+        </div>
+      
+        <div class="flex max-sm:flex-col">
+          <div class="bg-black w-[449px] pt-[100px] px-[51px] pb-[315px] text-white max-sm:w-full max-sm:py-[80px] max-sm:px-[50px]">
+            <div class="text-[48px] font-black tracking-[1px] mb-[30px] leading-[1.2] max-sm:text-[32px]">
+              Start a new project!
+            </div>
+            <p class="text-[15px] leading-[1.5]">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness.</p>
+          </div>
+          <form action="" class="bg-white pt-[128px] pr-[46px] pb-[80px] pl-[81px] max-sm:py-[60px] max-sm:px-[50px]">
+            <input type="text" class="border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" placeholder="Your full name" required>
+            <input type="email" name="" id="" class="border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" placeholder="Your e-mail address" required>
+            <textarea name="" id="" class="resize-none border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" cols="20" rows="10" placeholder="Drop us a message here…" required></textarea>
+            <div class="text-right">
+              <button type="submit" class="uppercase tracking-[3px] text-center w-[154px] bg-yellow py-[10px] hover:bg-black hover:text-white duration-300 cursor-pointer">Send now</button>
+            </div>
+          </form>
+        </div>
+      
+      </section>
+      
+      <footer class="bg-black py-[124px] pr-[164px] pl-[163px] flex gap-[59px] text-white max-sm:flex-wrap max-sm:py-[50px] max-sm:px-[25px]">
+        <div class="w-[356px] max-sm:w-full">
+          <a href="" class="rubberBand duration-300 ease-in max-sm:mb-[20px] inline-block"><img src="assets/images/logo.png" alt="" class="w-[78px] invert-100" width="78" height="51" /></a>
+          <div class="tracking-[.8px] mb-[15px]">Funding freemium long tail hypotheses first mover advantage assets ownership niche market startup investor.</div>
+          <div class="mb-[13px]">
+            <a href="mailto:agensi@mail.com" class="text-[18px] group inline-flex items-center gap-[10px]"><img src="assets/images/footer/mail.png" alt="" class="w-[16px]" width="11"> <span class="textLine tlWhite">agensi@mail.com</span></a>
+          </div>
+          <div>
+            <a href="tel:+12 3456 7890" class="text-[18px] group inline-flex items-center gap-[10px]"><img src="assets/images/footer/call.png" alt="" class="w-[16px]" width="16" height="16"> <span class="textLine tlWhite">+12 3456 7890</span></a>
           </div>
         </div>
         <div class="">
-          <a href="" class="mb-[27px] group flex gap-[27px]">
-            <div class="w-[163px] h-[163px] overflow-hidden">
-              <img src="assets/images/blogs/img_2.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
-            </div>
-            <div class="w-[275px]">
-              <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">website development</div>
-              <div class="text-[24px] leading-[1.3] font-black text-black">The individual is born of nature, but the artist is born of that individual</div>
-            </div>
-          </a>
-    
-          <a href="" class="mb-[27px] group flex gap-[27px]">
-            <div class="w-[163px] h-[163px] overflow-hidden">
-              <img src="assets/images/blogs/img_3.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
-            </div>
-            <div class="w-[275px]">
-              <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">Brand Design</div>
-              <div class="text-[24px] leading-[1.3] font-black text-black">A life without it is like a sunless garden when the flowers are dead</div>
-            </div>
-          </a>
-    
-          <a href="" class="mb-[27px] group flex gap-[27px]">
-            <div class="w-[163px] h-[163px] overflow-hidden">
-              <img src="assets/images/blogs/img_4.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
-            </div>
-            <div class="w-[275px]">
-              <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">UI UX Design</div>
-              <div class="text-[24px] leading-[1.3] font-black text-black">All sorrows can be borne if they can be put into a story</div>
-            </div>
-          </a>
-    
-          <a href="" class="mb-[27px] group flex gap-[27px]">
-            <div class="w-[163px] h-[163px] overflow-hidden">
-              <img src="assets/images/blogs/img_5.png" alt="" class="group-hover:scale-[1.2] duration-500 ease-in" width="163" height="163">
-            </div>
-            <div class="w-[275px]">
-              <div class="mb-[20px] text-[12px] font-black text-blueGray uppercase">Brand Design</div>
-              <div class="text-[24px] leading-[1.3] font-black text-black">Love is friendship set on fire. certain thoughts are prayers</div>
-            </div>
-          </a>
+          <div class="text-[16px] font-black">Services</div>
+          <ul class="mt-[20px] text-[15px]">
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Digital Marketing</a></li>
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Branding</a></li>
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Market Promotion</a></li>
+            <li class=""><a href="" class="textLine tlWhite">Digital Campaign</a></li>
+          </ul>
         </div>
-      </div>
-    </section>
-    
-    <section class="bg-f2 pt-[60px] pr-[163px] pb-[120px] pl-[164px]">
-      <h2 class="mb-[70px] ml-auto w-[420px] text-right text-[48px] leading-[1.3] font-black text-black"><span class="text-yellow">People</span> behind the scenes</h2>
-      <div class="flex items-start gap-[27px]">
-        <div class="w-[350px]">
-          <div class="text-[28px] font-black">Tiara Lyodra</div>
-          <div class="my-[20px] text-[13px] font-bold text-grey">Head of Product</div>
-          <div class="mb-[50px] flex gap-[30px] text-[14px] font-black">
-            <a href="" class="duration-300 ease-in group">
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.09322 14V7.7H7.13342L7.46667 4.9H5.09322V3.5364C5.09322 2.8154 5.11287 2.1 6.18754 2.1H7.27603V0.098C7.27603 0.0679 6.34106 0 5.39518 0C3.41974 0 2.18281 1.1599 2.18281 3.29V4.9H0V7.7H2.18281V14H5.09322Z"
-                    fill="#DBDBDB" />
-                <mask id="mask0_2349_142" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="8" height="14">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.09322 14V7.7H7.13342L7.46667 4.9H5.09322V3.5364C5.09322 2.8154 5.11287 2.1 6.18754 2.1H7.27603V0.098C7.27603 0.0679 6.34106 0 5.39518 0C3.41974 0 2.18281 1.1599 2.18281 3.29V4.9H0V7.7H2.18281V14H5.09322Z"
-                        fill="white" />
-                </mask>
-                <g mask="url(#mask0_2349_142)">
-                    <rect width="8" height="14" fill="black" />
-                </g>
-            </svg>
+        <div class="">
+          <div class="text-[16px] font-black">About Us</div>
+          <ul class="mt-[20px] text-[15px]">
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Milestone</a></li>
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Check Our Pricing Plan</a></li>
+            <li class="mb-[25px]"><a href="" class="textLine tlWhite">Expert Team</a></li>
+            <li class=""><a href="" class="textLine tlWhite">Our Exciting News</a></li>
+          </ul>
+        </div>
+        <div class="w-[192px]">
+          <div class="text-[16px] font-black">Address</div>
+          <address class="mt-[20px] text-[15px] tracking-[1px] leading-[1.7]">
+            123 Lorem Ipsum Street
+            Jakarta, Indonesia
+          </address>
+          <div class="flex gap-[20px] mt-[25px]">
+            <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
+              <img src="assets/images/footer/fb.png" alt="" class="w-[8px]" width="8" height="14" />
             </a>
-            <a href="" class="duration-300 ease-in group">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.5766 3.26337C11.5766 3.72728 11.2005 4.10337 10.7366 4.10337C10.2727 4.10337 9.89658 3.72728 9.89658 3.26337C9.89658 2.79945 10.2727 2.42337 10.7366 2.42337C11.2005 2.42337 11.5766 2.79945 11.5766 3.26337ZM7 9.33335C5.71134 9.33335 4.66665 8.28866 4.66665 7C4.66665 5.71134 5.71134 4.66665 7 4.66665C8.28866 4.66665 9.33335 5.71134 9.33335 7C9.33335 8.28866 8.28866 9.33335 7 9.33335ZM7 3.40539C5.01479 3.40539 3.40539 5.01473 3.40539 7C3.40539 8.98521 5.01479 10.5946 7 10.5946C8.98521 10.5946 10.5946 8.98521 10.5946 7C10.5946 5.01473 8.98521 3.40539 7 3.40539ZM7 0C5.0989 0 4.86057 0.00803906 4.11392 0.0421094C3.36886 0.076125 2.85999 0.194414 2.41473 0.3675C1.95442 0.546383 1.56406 0.78575 1.17491 1.17491C0.78575 1.56401 0.546383 1.95437 0.3675 2.41473C0.194469 2.85999 0.076125 3.3688 0.0421094 4.11392C0.00803906 4.86052 0 5.0989 0 7C0 8.9011 0.00803906 9.13948 0.0421094 9.88608C0.076125 10.6311 0.194469 11.14 0.3675 11.5853C0.546383 12.0455 0.78575 12.4359 1.17491 12.8251C1.56406 13.2143 1.95442 13.4536 2.41473 13.6325C2.85999 13.8056 3.36886 13.9239 4.11392 13.9579C4.86057 13.992 5.0989 14 7 14C8.9011 14 9.13954 13.992 9.88608 13.9579C10.6312 13.9239 11.14 13.8056 11.5853 13.6325C12.0456 13.4536 12.436 13.2143 12.8251 12.8251C13.2143 12.4359 13.4536 12.0456 13.6326 11.5853C13.8056 11.14 13.9239 10.6311 13.9579 9.88608C13.992 9.13948 14 8.9011 14 7C14 5.0989 13.992 4.86052 13.9579 4.11392C13.9239 3.3688 13.8056 2.85999 13.6326 2.41473C13.4536 1.95437 13.2143 1.56401 12.8251 1.17491C12.436 0.78575 12.0456 0.546383 11.5853 0.3675C11.14 0.194414 10.6312 0.076125 9.88608 0.0421094C9.13954 0.00803906 8.9011 0 7 0ZM7 1.26126C8.86911 1.26126 9.09048 1.26837 9.8286 1.30205C10.5111 1.33323 10.8817 1.44725 11.1285 1.54306C11.4551 1.67005 11.6884 1.8218 11.9333 2.0667C12.1783 2.31164 12.3299 2.54488 12.4569 2.87159C12.5528 3.11828 12.6668 3.48895 12.6979 4.1714C12.7316 4.90952 12.7387 5.13089 12.7387 7C12.7387 8.86905 12.7316 9.09043 12.6979 9.82855C12.6668 10.5111 12.5528 10.8817 12.4569 11.1284C12.3299 11.4551 12.1783 11.6883 11.9333 11.9333C11.6884 12.1782 11.4551 12.33 11.1285 12.4569C10.8817 12.5528 10.5111 12.6668 9.8286 12.6979C9.09059 12.7316 8.86922 12.7387 7 12.7387C5.13084 12.7387 4.90941 12.7316 4.1714 12.6979C3.48895 12.6668 3.11828 12.5528 2.87164 12.4569C2.54488 12.33 2.31164 12.1782 2.0667 11.9333C1.8218 11.6883 1.6701 11.4551 1.54312 11.1284C1.44725 10.8817 1.33323 10.5111 1.30211 9.8286C1.26837 9.09043 1.26126 8.86905 1.26126 7C1.26126 5.13089 1.26837 4.90952 1.30211 4.1714C1.33323 3.48895 1.44725 3.11828 1.54312 2.87159C1.6701 2.54488 1.8218 2.31164 2.0667 2.0667C2.31164 1.8218 2.54488 1.67005 2.87164 1.54306C3.11828 1.44725 3.48895 1.33323 4.1714 1.30205C4.90952 1.26837 5.13095 1.26126 7 1.26126Z"
-                fill="#DBDBDB" />
-                <mask id="mask0_2349_143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11.5766 3.26337C11.5766 3.72728 11.2005 4.10337 10.7366 4.10337C10.2727 4.10337 9.89658 3.72728 9.89658 3.26337C9.89658 2.79945 10.2727 2.42337 10.7366 2.42337C11.2005 2.42337 11.5766 2.79945 11.5766 3.26337ZM7 9.33335C5.71134 9.33335 4.66665 8.28866 4.66665 7C4.66665 5.71134 5.71134 4.66665 7 4.66665C8.28866 4.66665 9.33335 5.71134 9.33335 7C9.33335 8.28866 8.28866 9.33335 7 9.33335ZM7 3.40539C5.01479 3.40539 3.40539 5.01473 3.40539 7C3.40539 8.98521 5.01479 10.5946 7 10.5946C8.98521 10.5946 10.5946 8.98521 10.5946 7C10.5946 5.01473 8.98521 3.40539 7 3.40539ZM7 0C5.0989 0 4.86057 0.00803906 4.11392 0.0421094C3.36886 0.076125 2.85999 0.194414 2.41473 0.3675C1.95442 0.546383 1.56406 0.78575 1.17491 1.17491C0.78575 1.56401 0.546383 1.95437 0.3675 2.41473C0.194469 2.85999 0.076125 3.3688 0.0421094 4.11392C0.00803906 4.86052 0 5.0989 0 7C0 8.9011 0.00803906 9.13948 0.0421094 9.88608C0.076125 10.6311 0.194469 11.14 0.3675 11.5853C0.546383 12.0455 0.78575 12.4359 1.17491 12.8251C1.56406 13.2143 1.95442 13.4536 2.41473 13.6325C2.85999 13.8056 3.36886 13.9239 4.11392 13.9579C4.86057 13.992 5.0989 14 7 14C8.9011 14 9.13954 13.992 9.88608 13.9579C10.6312 13.9239 11.14 13.8056 11.5853 13.6325C12.0456 13.4536 12.436 13.2143 12.8251 12.8251C13.2143 12.4359 13.4536 12.0456 13.6326 11.5853C13.8056 11.14 13.9239 10.6311 13.9579 9.88608C13.992 9.13948 14 8.9011 14 7C14 5.0989 13.992 4.86052 13.9579 4.11392C13.9239 3.3688 13.8056 2.85999 13.6326 2.41473C13.4536 1.95437 13.2143 1.56401 12.8251 1.17491C12.436 0.78575 12.0456 0.546383 11.5853 0.3675C11.14 0.194414 10.6312 0.076125 9.88608 0.0421094C9.13954 0.00803906 8.9011 0 7 0ZM7 1.26126C8.86911 1.26126 9.09048 1.26837 9.8286 1.30205C10.5111 1.33323 10.8817 1.44725 11.1285 1.54306C11.4551 1.67005 11.6884 1.8218 11.9333 2.0667C12.1783 2.31164 12.3299 2.54488 12.4569 2.87159C12.5528 3.11828 12.6668 3.48895 12.6979 4.1714C12.7316 4.90952 12.7387 5.13089 12.7387 7C12.7387 8.86905 12.7316 9.09043 12.6979 9.82855C12.6668 10.5111 12.5528 10.8817 12.4569 11.1284C12.3299 11.4551 12.1783 11.6883 11.9333 11.9333C11.6884 12.1782 11.4551 12.33 11.1285 12.4569C10.8817 12.5528 10.5111 12.6668 9.8286 12.6979C9.09059 12.7316 8.86922 12.7387 7 12.7387C5.13084 12.7387 4.90941 12.7316 4.1714 12.6979C3.48895 12.6668 3.11828 12.5528 2.87164 12.4569C2.54488 12.33 2.31164 12.1782 2.0667 11.9333C1.8218 11.6883 1.6701 11.4551 1.54312 11.1284C1.44725 10.8817 1.33323 10.5111 1.30211 9.8286C1.26837 9.09043 1.26126 8.86905 1.26126 7C1.26126 5.13089 1.26837 4.90952 1.30211 4.1714C1.33323 3.48895 1.44725 3.11828 1.54312 2.87159C1.6701 2.54488 1.8218 2.31164 2.0667 2.0667C2.31164 1.8218 2.54488 1.67005 2.87164 1.54306C3.11828 1.44725 3.48895 1.33323 4.1714 1.30205C4.90952 1.26837 5.13095 1.26126 7 1.26126Z"
-                        fill="white" />
-                </mask>
-                <g mask="url(#mask0_2349_143)">
-                    <rect width="14" height="14" fill="black" />
-                </g>
-              </svg>
+            <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
+              <img src="assets/images/footer/google.png" alt="" class="w-[12px]" width="12" height="12" />
             </a>
-            <a href="" class="duration-300 ease-in group">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-primary">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M10.4338 10.2862H8.70527V7.20433C8.70527 6.48793 8.45502 5.99893 7.82949 5.99893C7.35191 5.99893 7.06773 6.32877 6.94256 6.6471C6.89713 6.76076 6.88562 6.92 6.88562 7.07931V10.2862H5.15714V6.49922C5.15714 5.80561 5.13442 5.22566 5.1117 4.72522H6.61272L6.69246 5.49856H6.72653C6.95392 5.13457 7.51123 4.60006 8.44373 4.60006C9.58099 4.60006 10.4338 5.36211 10.4338 6.99966V10.2862ZM3.24692 4.0429C2.70119 4.0429 2.34864 3.65612 2.34864 3.17862C2.34864 2.68969 2.71248 2.31441 3.26963 2.31441C3.82687 2.31441 4.16806 2.68969 4.17942 3.17862C4.17942 3.65612 3.82687 4.0429 3.24692 4.0429ZM2.39407 10.2862H4.12263V4.72522H2.39407V10.2862ZM11.5527 0H1.2953C0.579799 0 0 0.581816 0 1.29963V11.7004C0 12.4182 0.579799 13 1.2953 13H11.5527C12.2682 13 12.848 12.4182 12.848 11.7004V1.29963C12.848 0.581816 12.2682 0 11.5527 0Z"
-                    fill="#DBDBDB" />
-                <mask id="mask0_2349_144" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M10.4338 10.2862H8.70527V7.20433C8.70527 6.48793 8.45502 5.99893 7.82949 5.99893C7.35191 5.99893 7.06773 6.32877 6.94256 6.6471C6.89713 6.76076 6.88562 6.92 6.88562 7.07931V10.2862H5.15714V6.49922C5.15714 5.80561 5.13442 5.22566 5.1117 4.72522H6.61272L6.69246 5.49856H6.72653C6.95392 5.13457 7.51123 4.60006 8.44373 4.60006C9.58099 4.60006 10.4338 5.36211 10.4338 6.99966V10.2862ZM3.24692 4.0429C2.70119 4.0429 2.34864 3.65612 2.34864 3.17862C2.34864 2.68969 2.71248 2.31441 3.26963 2.31441C3.82687 2.31441 4.16806 2.68969 4.17942 3.17862C4.17942 3.65612 3.82687 4.0429 3.24692 4.0429ZM2.39407 10.2862H4.12263V4.72522H2.39407V10.2862ZM11.5527 0H1.2953C0.579799 0 0 0.581816 0 1.29963V11.7004C0 12.4182 0.579799 13 1.2953 13H11.5527C12.2682 13 12.848 12.4182 12.848 11.7004V1.29963C12.848 0.581816 12.2682 0 11.5527 0Z"
-                        fill="white" />
-                </mask>
-                <g mask="url(#mask0_2349_144)">
-                    <rect width="13" height="13" fill="black" />
-                </g>
-              </svg>
+            <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
+              <img src="assets/images/footer/twitter.png" alt="" class="w-[13px]" width="13" height="11" />
             </a>
           </div>
-          <div class="text-[15px] text-db">
-            <p class="mb-[30px]">Saturday found him for the first time strolling alone through zurich, breathing in the heady smell of his freedom. new adventures hid around each corner.</p>
-            <p class="">The future was again a secret. now, what was tiring had disappeared and only the beauty remained.</p>
-          </div>
         </div>
-        <div class="flex items-end gap-[27px]">
-          <img src="assets/images/team/img_1.png" alt="" class="w-[163px]" width="163" height="163">
-          <img src="assets/images/team/img_2.png" alt="" class="w-[163px]" width="163" height="163">
-          <img src="assets/images/team/img_3.png" alt="" class="w-[163px]" width="163" height="421">
-          <img src="assets/images/team/img_4.png" alt="" class="w-[163px]" width="163" height="163">
-        </div>
-      </div>
-    </section>
-    
-    <section class="bg-yellow pt-[75px] pb-[109px]">
-      <div class="w-[575px] mx-auto text-center">
-        <img src="assets/images/icons/icon_1.png" alt="" class="w-[66px] m-auto mb-[20px]" width="66" height="58">
-        <div class="text-[15px] tracking-[.8px] mb-[22px]">
-          Saturday found him for the first time strolling alone through zurich, breathing in the heady smell of his freedom. new adventures hid around each corner. The future was again a secret. now, what was tiring
-        </div>
-        <div class="text-[13px] font-black mb-[18px]">Anna Karenina</div>
-        <div class="text-[13px] font-bold">UI Designer</div>
-      </div>
-    </section>
-    
-    <section class="bg-f2 pt-[90px] pr-[163px] pb-[120px] pl-[164px]">
-    
-      <div class="flex justify-center items-center gap-[27px] text-center mb-[191px]">
-        <img src="assets/images/clients/logo_1.png" alt="" class="w-[164px]" width="164" height="100">
-        <img src="assets/images/clients/logo_2.png" alt="" class="w-[164px]" width="164" height="100">
-        <img src="assets/images/clients/logo_3.png" alt="" class="w-[164px]" width="164" height="100">
-        <img src="assets/images/clients/logo_4.png" alt="" class="w-[164px]" width="164" height="100">
-        <img src="assets/images/clients/logo_5.png" alt="" class="w-[164px]" width="164" height="100">
-      </div>
-    
-      <div class="flex">
-        <div class="bg-black w-[449px] pt-[100px] px-[51px] pb-[315px] text-white">
-          <div class="text-[48px] font-black tracking-[1px] mb-[30px] leading-[1.2]">
-            Start a new project!
-          </div>
-          <p class="text-[15px] leading-[1.5]">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness.</p>
-        </div>
-        <form action="" class="bg-white pt-[128px] pr-[46px] pb-[80px] pl-[81px]">
-          <input type="text" class="border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" placeholder="Your full name" required>
-          <input type="email" name="" id="" class="border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" placeholder="Your e-mail address" required>
-          <textarea name="" id="" class="resize-none border-b-[3px] border-yellow w-full text-[15px] pb-[15px] text-db placeholder:text-db mb-[50px] outline-0" cols="20" rows="10" placeholder="Drop us a message here…" required></textarea>
-          <div class="text-right">
-            <button type="submit" class="uppercase tracking-[3px] text-center w-[154px] bg-yellow py-[10px] hover:bg-black hover:text-white duration-300 cursor-pointer">Send now</button>
-          </div>
-        </form>
-      </div>
-    
-    </section>
-    
-    <footer class="bg-black py-[124px] pr-[164px] pl-[163px] flex gap-[59px] text-white">
-      <div class="w-[356px]">
-        <a href="" class="rubberBand duration-300 ease-in"><img src="assets/images/logo.png" alt="" class="w-[78px] invert-100" width="78" height="51" /></a>
-        <div class="tracking-[.8px] mb-[15px]">Funding freemium long tail hypotheses first mover advantage assets ownership niche market startup investor.</div>
-        <div class="mb-[13px]">
-          <a href="mailto:agensi@mail.com" class="text-[18px] group inline-flex items-center gap-[10px]"><img src="assets/images/footer/mail.png" alt="" class="w-[16px]" width="11"> <span class="textLine tlWhite">agensi@mail.com</span></a>
-        </div>
-        <div>
-          <a href="tel:+12 3456 7890" class="text-[18px] group inline-flex items-center gap-[10px]"><img src="assets/images/footer/call.png" alt="" class="w-[16px]" width="16" height="16"> <span class="textLine tlWhite">+12 3456 7890</span></a>
-        </div>
-      </div>
-      <div class="">
-        <div class="text-[16px] font-black">Services</div>
-        <ul class="mt-[20px] text-[15px]">
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Digital Marketing</a></li>
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Branding</a></li>
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Market Promotion</a></li>
-          <li class=""><a href="" class="textLine tlWhite">Digital Campaign</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <div class="text-[16px] font-black">About Us</div>
-        <ul class="mt-[20px] text-[15px]">
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Milestone</a></li>
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Check Our Pricing Plan</a></li>
-          <li class="mb-[25px]"><a href="" class="textLine tlWhite">Expert Team</a></li>
-          <li class=""><a href="" class="textLine tlWhite">Our Exciting News</a></li>
-        </ul>
-      </div>
-      <div class="w-[192px]">
-        <div class="text-[16px] font-black">Address</div>
-        <address class="mt-[20px] text-[15px] tracking-[1px] leading-[1.7]">
-          123 Lorem Ipsum Street
-          Jakarta, Indonesia
-        </address>
-        <div class="flex gap-[20px] mt-[25px]">
-          <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
-            <img src="assets/images/footer/fb.png" alt="" class="w-[8px]" width="8" height="14" />
-          </a>
-          <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
-            <img src="assets/images/footer/google.png" alt="" class="w-[12px]" width="12" height="12" />
-          </a>
-          <a href="" target="_blank" class="border-[1px] border-lightGray rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-yellow duration-300 ease-in">
-            <img src="assets/images/footer/twitter.png" alt="" class="w-[13px]" width="13" height="11" />
-          </a>
-        </div>
-      </div>
-    </footer>  
+      </footer>  
+    </main>
   </body>
 </html>
